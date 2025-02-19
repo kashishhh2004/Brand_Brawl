@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleSass - Fashion Store</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>StyleSass</h1>
+            <ul>
+                <li><a href="index.html">Store</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+   
+
+    <section id="fashion" class="fashion-image"> 
+        <h3>
+        <img src="stylediff.jpg" alt="">
+        </h3>
+    </section>
+
+    
+    <footer>
+        <p>© 2025 StyleSass. All Rights Reserved.</p>
+    </footer>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: linear-gradient(135deg, #ff7eb3, #ff758c);
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        nav h1 {
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 12px 20px;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+        nav ul li a:hover {
+            background-color: white;
+            color: #ff758c;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: url('https://source.unsplash.com/1600x900/?fashion') no-repeat center/cover;
+            color: white;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .explore-btn {
+            background: white;
+            color: #ff758c;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s ease;
+            border-radius: 20px;
+        }
+        .explore-btn:hover {
+            background: #ff3b6b;
+            color: white;
+        }
+        .products {
+            text-align: center;
+            padding: 50px;
+            background: white;
+        }
+        .product-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .product {
+            background: #ff758c;
+            padding: 20px;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .product:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+    
+    </style>
+</body>
+</html>

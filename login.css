@@ -1,0 +1,121 @@
+/* Full Page Background with Gradient */
+body {
+    margin: 0;
+    padding: 0;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #e02b31, #986556, #fad0c4, #a33684, #371783);
+    background-size: 400% 400%;
+    animation: gradientBG 8s ease infinite;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Smooth Background Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Login Box */
+.login-container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Text Styling */
+h1 {
+    font-size: 28px;
+    color: #3f1818;
+    margin-bottom: 5px;
+}
+h2 {
+    font-size: 18px;
+    color: #d76666;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.input-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s;
+    background: rgba(255, 255, 255, 0.2);
+    color: rgb(208, 162, 162);
+    text-align: center;
+}
+
+/* Placeholder Colors */
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Input Focus Effects */
+input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+/* Animated Button */
+.btn {
+    width: 90%;
+    text-align: center;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(90deg, #883c3f, #580641);
+    color: rgb(4, 3, 3);
+    transition: 0.4s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Hover Effect */
+.btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #270f60, #a91981);
+}
+
+/* Error Message */
+.error {
+    color: #ff4b5c;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .login-container {
+        width: 100%;
+    }
+}
